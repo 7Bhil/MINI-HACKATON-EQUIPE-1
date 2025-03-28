@@ -72,7 +72,7 @@ h1 span{
     position: relative;
     left: 600px;
     font-size: 20px;
-
+    top: 25px;
 }
 
 .p span{
@@ -81,7 +81,7 @@ h1 span{
 }
 #recherche{
     position: relative;
-    top:20px;
+    top:70px;
     left: 710px;
     border: 3px solid #faf7f7;
     border-radius: 17px 17px 17px;
@@ -89,7 +89,7 @@ h1 span{
     margin-right: 85%;
     backdrop-filter: blur(100px);
     padding: 14px 18px;
-    height: 20px;
+    height: 50px;
     z-index: 1;
 
 }
@@ -130,7 +130,7 @@ h1 span{
     width: 17%;
     height: 35px;
     position: relative;
-    bottom: 200%;
+    bottom: 40px;
     left: 85%;
     border-radius: 100px 100px 100px 100px;
 }
