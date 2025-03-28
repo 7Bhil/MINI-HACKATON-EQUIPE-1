@@ -2,7 +2,7 @@ body{
     overflow-x: hidden;
 }
 #entete{
-    background-attachment: fixed;
+    padding: 13px;
 }
 #page{
         background-image: url('Divan.jpg');
@@ -34,11 +34,19 @@ span{
 ul{
     display: inline;
     position: relative;
-    left: 25%;
     z-index: 3;
     opacity: 1;
     color: white;
     transition: 1s;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#achat{
+    position: fixed;
+    right: 368px; 
+    top: 50px;
+    font-size: x-large;
+    z-index: 5;
 }
 h1{
     font-size: 80px;
@@ -49,12 +57,11 @@ h1{
     font-weight: 1000;
 }
 #sac{
-    height: 50px;
-    position: relative;
-    left: 800px;
-    position: relative;
+    height: 57px;
+    right: 320px;
+    position: fixed;
     top: 13px;
-    fill: #ffffff;
+    z-index: 1;
 }
 h1 span{
     margin-left: 2%;
@@ -217,4 +224,231 @@ h1 span{
     position: relative;
     bottom: 5px;
 }
+
+
+}
+* Testimonials Section */
+.testimonials {
+    padding: 100px 80px;
+    text-align: center;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+}
+
+.testimonials-carousel {
+    display: flex;
+    gap: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow-x: auto;
+    padding: 20px 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.testimonials-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-card {
+    flex: 0 0 380px;
+    background: var(--white);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.testimonial-card h3 {
+    font-family: var(--font-gilroy-bold);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profession {
+    color: var(--primary-color);
+    font-family: var(--font-gilroy-medium);
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.rating {
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.star {
+    margin: 0 2px;
+}
+
+.star-empty {
+    margin: 0 2px;
+    opacity: 0.3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 80px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-brand h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    color: #E57C23;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: a;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-links li {
+    display: flex;
+    align-items: center;
+}
+
+.social-links li i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero h2 {
+        font-size: 60px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .search-container {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .why-us {
+        padding: 60px 20px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+}
+.section-title{
+    position: relative;
+    left: 850px;
+}
+
+.section-title h3{
+    color: orange;
+    position: relative;
+    left: 50px;
 }
