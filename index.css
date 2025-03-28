@@ -141,92 +141,6 @@ h1 span{
     fill: white;
 }
 
-@media screen and (max-width: 768px) {
-   
-#page{
-    margin: -3%;
-    width: 195vh;
-    height: 170vh;
-    background-repeat: no-repeat; /* Empêche la répétition */
-    background-size: 100% 100%;
-    z-index: 1;
-    display: block;
-}
-#Logo{
-    position: relative;
-    font-size: 100px;
-}
-
-
-li{
-    display: block;
-    font-size: 70px;
-    opacity: 0;
-
-}
-ul{
-    position: absolute;
-    left: 2400px;
-    width: 60%;
-    margin: 7%;
-}
-
-#sac{
-    height: 200px;
-    position: relative;
-    left: 900px;
-    position: relative;
-    top: 13px;
-}
-
-#three{
-    position: relative;
-    opacity: 1;
-    bottom: 5px;
-    left: 150px;
-    width: 40%;
-    z-index: 1;
-}
-
-h1 span{
-    font-size: 150px;
-    position: absolute;
-    left: 100px;
-    top: 90px
-}
-.p{
-    color: white;
-    position: relative;
-    left: 650px;
-    font-size: 59px;
-    top: 653px;
-}
-
-#recherche{
-    position: relative;
-    top:772px;
-    left: 1200px;
-    border: 1px solid #faf7f7;
-    border-radius: 17px 17px 17px;
-    display: block;
-    width: 444px;
-    height: 51px;
-}
-#recherche span{
-    width: 12%;
-    height: 42px;
-    bottom: 60%;
-}
-#recherche input{
-    font-size: 50px;
-    height: 49px;
-    width: 85%;
-    position: relative;
-    bottom: 5px;
-}
-
-
-}
 * Testimonials Section */
 .testimonials {
     padding: 100px 80px;
@@ -451,4 +365,66 @@ body {
     color: orange;
     position: relative;
     left: 50px;
+}
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 50px;
+        left: 10%;
+        text-align: center;
+    }
+
+    .p {
+        font-size: 16px;
+        left: 10%;
+        text-align: center;
+    }
+
+    #recherche {
+        width: 80%;
+        left: 10%;
+    }
+
+    .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product-card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar ul {
+        display: none; /* Cache la nav sur mobile */
+    }
+
+    #three {
+        opacity: 1; /* Affiche l'icône burger */
+        width: 40px;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        left: 0;
+    }
+
+    .p {
+        font-size: 14px;
+        text-align: center;
+        left: 0;
+    }
+
+    #recherche {
+        width: 90%;
+        left: 5%;
+    }
+
+    .product-card {
+        width: 100%;
+    }
 }
