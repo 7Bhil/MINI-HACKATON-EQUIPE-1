@@ -39,4 +39,25 @@ three[0].addEventListener("click", ()=>{
             ul.style.backgroundColor = "transparent";
         }
         }
+
+})
+
+nbr = document.getElementById("achat")
+add = document.getElementsByClassName("add-btn")
+nbr.value = 0
+add[0].addEventListener("click", ()=>{
+    nbr.value = nbr.value +1
+    nbr.innerHTML= nbr.value
+})
+add[1].addEventListener("click", ()=>{
+    nbr.value = nbr.value +1
+    nbr.innerHTML= nbr.value
+})
+add[2].addEventListener("click", ()=>{
+    nbr.value = nbr.value +1
+    nbr.innerHTML= nbr.value
+})
+add[3].addEventListener("click", ()=>{
+    nbr.value = nbr.value +1
+    nbr.innerHTML= nbr.value
 })
