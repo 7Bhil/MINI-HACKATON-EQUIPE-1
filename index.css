@@ -35,10 +35,10 @@ ul{
     display: inline;
     position: relative;
     z-index: 3;
-    opacity: 1;
     color: white;
     transition: 1s;
     border-radius: 30px 30px 30px 30px;
+    margin-left: 25%;
 }
 
 #achat{
@@ -223,11 +223,6 @@ h1 span{
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-
-body {
-    background-color: #f8f8f8;
-}
-
 .footer {
     background-color: #7e7e7e;
     padding: 40px 80px;
@@ -319,22 +314,6 @@ body {
 }
 
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .hero h2 {
-        font-size: 60px;
-    }
-
-    .hero p {
-        font-size: 20px;
-    }
-
-    .search-container {
-        width: 300px;
-    }
-}
-
-
 @media (max-width: 768px) {
 
 #page{
@@ -347,6 +326,11 @@ body {
     margin: -0.4%
   
 }
+ul {
+    background-color: #E57C23 !important;
+    margin: 0;
+}
+
 #Logo{
 font-size: 100px;
 color: white;
@@ -371,10 +355,6 @@ span{
 display: inline;
 
 }
-ul{
-    background-color: #E57C23;
-}
-
 #achat{
     position: fixed;
     right: 368px; 
@@ -383,7 +363,7 @@ ul{
     z-index: 5;
 }
 h1{
-    font-size: 90px;
+    font-size: 60px;
    left: 11%;
    text-align: center;
 }
@@ -465,32 +445,77 @@ left: -158px;
     fill: white;
 }
 }
-.section-title{
-    position: relative;
-    left: 850px;
+.title{
+    margin: 3%;
+    margin-left: 780px;
+    font-size: 50px;
 }
-
-.section-title h3{
-    color: orange;
-    position: relative;
-    left: 50px;
+.filters{
+    margin-left: 780px;
 }
-@media (max-width: 1024px) {
-    h1 {
-        font-size: 50px;
-        left: 10%;
-        text-align: center;
-    }
+button{
+    font-size:30px;
+    border-radius: 17px;
+    padding: 5px;
+}
+#droit{
+    position:relative;
+    bottom:55px;
+    width: 2%;
+    left: 450px;
+}
+#gauche{
+    position:relative;
+    bottom:40px;
+    width: 2%;
+}
+.product-grid{
+    display: inline-flex;
+    margin-left: 26%;
+    text-align: center;
+}
+.active{
+    background-color: black;
+    color:white;
+    box-shadow: 5px 4px 3px grey;
+}
+#article{
+    margin-top: 3%;
+}
+.product-card img{
+    height: 275px;
+}
+.product-card button{
+font-size: 30px;
+padding: 5px;
+width: 23%;
+border-radius: 30px;
+background-color: black;
+color: white;
 
+}
+.experience-section{
+    display:flex;
+}
+.image-container{
+    flex: 1;
 
-    .product-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+}
+.text-container{
+    flex: 1;
+    margin: 2%;
+}
+.tag{
+    color: #ffa700; 
+    margin: 2% 0;
 
-    .product-card {
-        width: 45%;
-        margin-bottom: 20px;
-    }
+}
+.text-container h2{
+    margin: 2% 0;
+    width: 30%;
+}
+.description{
+    width: 44%;
+    margin: 2% 0;
+
 }
